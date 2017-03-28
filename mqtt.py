@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-
+#http://blog.getflint.io/blog/get-started-with-aws-iot-and-raspberry-pi
 #required libraries
 import sys                                 
 import ssl
