@@ -1,0 +1,18 @@
+import os;
+""" Sends audio file (audio_fname) to Google's text to speech 
+	service and returns service's response. We need a FLAC 
+	converter if audio is not FLAC (check FLAC_CONV). """
+FLAC_CONV = 'flac -f'  # We need a WAV to FLAC converter. flac is available
+                       # on Linux
+
+audio_fname = "xinchao.wav"
+print "Sending ", audio_fname
+#Convert to flac first
+filename = "xinchao.wav"
+del_flac = False
+if 'flac' not in filename:
+	del_flac = True
+	print "Converting to flac"
+	print FLAC_CONV + filename
+	os.system(FLAC_CONV + ' ' + filename)
+	filename = filename.split('.')[0] + '.flac'
