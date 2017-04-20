@@ -1,3 +1,5 @@
+#https://github.com/Barista-Bot/voice-control.git
+#https://github.com/jeysonmc/python-google-speech-scripts
 # -*- coding: utf8 -*-
 import urllib2
 import os
