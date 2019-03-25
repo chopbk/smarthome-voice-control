@@ -1,0 +1,236 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "smart home",
+            "intents": [
+                {
+                    "name": "WelcomeIntent",
+                    "slots": [],
+                    "samples": [
+                        "hello",
+                        "welcome",
+                        "start",
+                        "open smart home",
+                        "open"
+                    ]
+                },
+                {
+                    "name": "LivingRoomLightIntent",
+                    "slots": [
+                        {
+                            "name": "LivingRoomLight",
+                            "type": "LivingRoomLight"
+                        }
+                    ],
+                    "samples": [
+                        "turn {LivingRoomLight} living room light",
+                        "{LivingRoomLight} living room light",
+                        " living room light {LivingRoomLight}",
+                        " living room light turn {LivingRoomLight}"
+                    ]
+                },
+                {
+                    "name": "BedRoomLightIntent",
+                    "slots": [
+                        {
+                            "name": "BedRoomLight",
+                            "type": "BedRoomLight"
+                        }
+                    ],
+                    "samples": [
+                        "turn {BedRoomLight} BedRoom Light",
+                        "{BedRoomLight} Bed Room Light",
+                        " BedRoom Light {BedRoomLight}",
+                        " BedRoom Light turn {BedRoomLight}",
+                        "turn {BedRoomLight} Bed Room Light",
+                        "{BedRoomLight} Bed Room Light",
+                        " Bed Room Light {BedRoomLight}",
+                        " Bed Room Light turn {BedRoomLight}"
+                    ]
+                },
+                {
+                    "name": "KitchenLightIntent",
+                    "slots": [
+                        {
+                            "name": "KitchenLight",
+                            "type": "KitchenLight"
+                        }
+                    ],
+                    "samples": [
+                        "turn {KitchenLight} Kitchen Light",
+                        "{KitchenLight} Kitchen Light",
+                        " Kitchen Light {KitchenLight}",
+                        " Kitchen Light turn {KitchenLight}"
+                    ]
+                },
+                {
+                    "name": "TvIntent",
+                    "slots": [
+                        {
+                            "name": "ActionTv",
+                            "type": "ActionTv"
+                        }
+                    ],
+                    "samples": [
+                        "{ActionTv} Tv",
+                        "Tv {ActionTv}"
+                    ]
+                },
+                {
+                    "name": "EnvironmentIntent",
+                    "slots": [
+                        {
+                            "name": "Room",
+                            "type": "Room"
+                        }
+                    ],
+                    "samples": [
+                        "Temperature {Room}",
+                        "Humidity {Room}",
+                        "{Room} Temperature",
+                        "{Room} Humidity",
+                        "Temperature and Humidity {Room}",
+                        "{Room} Temperature and Humidity",
+                        "Humidity  and Temperature {Room}"
+                    ]
+                },
+                {
+                    "name": "YesIntent",
+                    "slots": [],
+                    "samples": [
+                        "okay",
+                        "yes I want",
+                        "yes"
+                    ]
+                },
+                {
+                    "name": "NoIntent",
+                    "slots": [],
+                    "samples": [
+                        "no",
+                        "sorry I don't",
+                        "I don't"
+                    ]
+                },
+                {
+                    "name": "StopIntent",
+                    "slots": [],
+                    "samples": []
+                },
+                {
+                    "name": "HelpIntent",
+                    "slots": [],
+                    "samples": [
+                        "help"
+                    ]
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                }
+            ],
+            "types": [
+                {
+                    "name": "BedRoomLight",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "on"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "off"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ActionTv",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "on"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "off"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "channel up"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "channel down"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "volume up"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "volume down"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "LivingRoomLight",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "on"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "off"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "KitchenLight",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "on"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "off"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "Room",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Living Room"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Kitchen"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "BedRoom"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
