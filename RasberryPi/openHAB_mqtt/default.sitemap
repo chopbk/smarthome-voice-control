@@ -1,0 +1,25 @@
+sitemap default label="Smart Home"
+{
+	Frame label="Điều khiển" {
+		Group item=Living label="Phòng Khách" icon="sofa"
+		Group item=Kitchen label="Phòng Bếp" icon="kitchen"
+		Group item=Bedroom label="Phòng Ngủ" icon="bedroom"
+	}
+	Frame label="Tiện ích" {
+	Text label="Giải trí" icon="video" {
+		Text label="Đọc báo" icon="video" {
+			Frame label="Đọc báo" {
+				Webview url="http://dantri.com.vn/" height=8
+                		
+			}
+		}
+		Text label="Bản đồ" icon="zoom" {
+			Frame label="Map/Location" {
+				Mapview item=BkLocation height=10
+			}
+		}
+	}
+
+}
+	
+}

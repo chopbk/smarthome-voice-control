@@ -1,0 +1,20 @@
+Group All
+Group Living "Phòng Khách" <Living> (All)
+Group Kitchen "Phòng Bếp" <Kitchen> (All)
+Group Bedroom "Phòng ngủ" <Bedroom> (All)
+
+
+//Living room
+Number Temperature_Living "Nhiệt độ[%.1f C]" <temperature> (Living) {mqtt="<[mymosquitto:/Living/Temperature:state:default]"}
+Number Humidity_Living "Độ ẩm [%.1f]" <humidity> (Living) {mqtt="<[mymosquitto:/Living/Humidity:state:default]"}
+Switch Light_Living "Đèn phòng khách" <light> (Living) { mqtt=">[mymosquitto:/Living/Light:command:off:OFF],>[mymosquitto:/Living/Light:command:on:ON],<[mymosquitto:/Living/Light/Status:state:default]"}
+//Kitchen
+Number Temperature_Kitchen "Nhiệt độ [%.1f C]" <temperature> (Kitchen) {mqtt="<[mymosquitto:/Kitchen/Temperature:state:default]"}
+Number Humidity_Kitchen "Độ ẩm [%.1f]" <humidity> (Kitchen) {mqtt="<[mymosquitto:/Kitchen/Humidity:state:default]"}
+Switch Light_Kitchen "Đèn phòng bếp" <light> (Kitchen) { mqtt=">[mymosquitto:/Kitchen/Light:command:off:OFF],>[mymosquitto:/Kitchen/Light:command:on:ON],<[mymosquitto:/Kitchen/Light/Status:state:default]"}
+//Main Bedroom
+Number Temperature_Bedroom "Nhiệt độ [%.1f C]" <temperature> (Bedroom) {mqtt="<[mymosquitto:/Bedroom/Temperature:state:default]"}
+Number Humidity_Bedroom "Độ ẩm [%.1f]" <humidity> (Bedroom) {mqtt="<[mymosquitto:/Bedroom/Humidity:state:default]"}
+Switch Light_Bedroom "Đèn phòng ngủ" <light> (Bedroom) { mqtt=">[mymosquitto:/Bedroom/Light:command:off:OFF],>[mymosquitto:/Bedroom/Light:command:on:ON],<[mymosquitto:/Bedroom/Light/Status:state:default]"}
+//Location
+Location BkLocation           "Đại học Bách Khoa Hà Nội"
